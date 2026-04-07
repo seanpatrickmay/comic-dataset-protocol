@@ -1,0 +1,700 @@
+{
+  "sources": [
+    {
+      "id": "src-sd-01",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5121784/",
+      "title": "Requirements for Minimum Sample Size for Sensitivity and Specificity Analysis",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["buderer-formula", "min-sensitivity-sample-size", "defect-recall-specimens"]
+    },
+    {
+      "id": "src-sd-02",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10981208/",
+      "title": "Review of sample size determination methods for the intraclass correlation coefficient in the one-way analysis of variance model",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["icc-sample-size", "icc-n20-floor", "icc-ci-width-by-n"]
+    },
+    {
+      "id": "src-sd-03",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4913118/",
+      "title": "A Guideline of Selecting and Reporting Intraclass Correlation Coefficients for Reliability Research",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["icc-n30-recommendation", "icc-model-selection"]
+    },
+    {
+      "id": "src-sd-04",
+      "url": "https://arxiv.org/abs/1211.1323",
+      "title": "Beleites et al.: Sample size planning for classification models",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["75-100-sample-minimum", "comparative-claims-require-hundreds"]
+    },
+    {
+      "id": "src-sd-05",
+      "url": "https://www.cambridge.org/core/journals/acta-numerica/article/optimal-experimental-design-formulations-and-computations/38BBD0DC1A0386FDF306B6C0167DF7D9",
+      "title": "Optimal experimental design: Formulations and computations",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["d-optimal-design", "fisher-information-maximization"]
+    },
+    {
+      "id": "src-sd-06",
+      "url": "https://apps.dtic.mil/sti/html/trecms/AD1223453/index.html",
+      "title": "JSM 2023: Comparing Normal and Binary D-Optimal Design of Experiments by Statistical Power",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["d-optimal-power-comparison", "binary-classification-design"]
+    },
+    {
+      "id": "src-sd-07",
+      "url": "https://arxiv.org/abs/2304.08701",
+      "title": "Bayesian D-Optimal Design of Experiments with Quantitative and Qualitative Responses",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["bayesian-d-optimal", "mixed-response-design"]
+    },
+    {
+      "id": "src-sd-08",
+      "url": "https://en.wikipedia.org/wiki/Neyman_allocation",
+      "title": "Neyman allocation — Wikipedia",
+      "accessed": "2026-04-07",
+      "type": "reference",
+      "claims_supported": ["neyman-allocation-formula", "optimal-stratum-weighting"]
+    },
+    {
+      "id": "src-sd-09",
+      "url": "https://www.econometrics.blog/post/the-wilson-confidence-interval-for-a-proportion/",
+      "title": "The Wilson Confidence Interval for a Proportion",
+      "accessed": "2026-04-07",
+      "type": "technical",
+      "claims_supported": ["wilson-ci-formula", "ci-width-by-n", "210-images-ci"]
+    },
+    {
+      "id": "src-sd-10",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4868880/",
+      "title": "Statistical notes for clinical researchers: Sample size calculation 2. Comparison of two independent proportions",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["two-proportion-power", "tier-accuracy-comparison-n"]
+    },
+    {
+      "id": "src-sd-11",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6683590/",
+      "title": "Sample Size Calculation Guide - Part 4: Sensitivity, Specificity, and AUC",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["buderer-formula-verification", "sensitivity-ci-formula"]
+    },
+    {
+      "id": "src-sd-12",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9639742/",
+      "title": "User's guide to sample size estimation in diagnostic accuracy studies",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["diagnostic-accuracy-design", "recall-measurement-n"]
+    },
+    {
+      "id": "src-sd-13",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0034425723004327",
+      "title": "Choosing a sample size allocation to strata based on trade-offs in precision",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["stratified-allocation-tradeoffs", "stratum-accuracy-ci"]
+    },
+    {
+      "id": "src-sd-14",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0950584923001866",
+      "title": "Stratified random sampling for neural network test input selection",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["stratified-test-selection", "ssoa-optimum-allocation"]
+    },
+    {
+      "id": "src-sd-15",
+      "url": "https://home.iitk.ac.in/~shalab/sampling/chapter4-sampling-stratified-sampling.pdf",
+      "title": "Stratified Sampling Theory — IIT Kanpur",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["neyman-allocation-formula", "design-effect-clustering"]
+    },
+    {
+      "id": "src-sd-16",
+      "url": "https://www.mdpi.com/2079-9292/12/21/4423",
+      "title": "Stratified Sampling-Based Deep Learning for Unbalanced Datasets",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["stratified-sampling-imbalanced", "deployment-distribution-match"]
+    },
+    {
+      "id": "src-sd-17",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0086528",
+      "title": "Evaluation of Image Quality According to Recognition Effectiveness Using Machine Learning",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["image-quality-accuracy-degradation", "photography-condition-effect"]
+    },
+    {
+      "id": "src-sd-18",
+      "url": "https://www.cgccomics.com/comic-grading/grading-scale/",
+      "title": "CGC Grading Scale",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["defect-cap-values", "grade-tier-definitions"]
+    },
+    {
+      "id": "src-sd-19",
+      "url": "https://www.cgccomics.com/resources/glossary/",
+      "title": "CGC Glossary of Defect Terms",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["defect-definitions", "defect-creation-feasibility"]
+    },
+    {
+      "id": "src-sd-20",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36048052/",
+      "title": "Updated guidelines on selecting an intraclass correlation coefficient for interrater reliability, 2022",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["icc-model-selection-2022", "icc-incomplete-designs"]
+    },
+    {
+      "id": "src-cd-01",
+      "url": "https://www.cgcgrading.com/en-US/resources/comics-grader-notes-guide",
+      "title": "Comics Grader Notes Guide",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["compound-defects/1.1", "compound-defects/1.2", "compound-defects/1.3", "compound-defects/5.1"]
+    },
+    {
+      "id": "src-cd-02",
+      "url": "https://www.cgccomics.com/news/article/3327/CGC-Modifies-Stance-on-Grading-Submissions-with-Tape/",
+      "title": "CGC Modifies Stance on Grading Submissions with Tape",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["compound-defects/1.3", "compound-defects/5.3"]
+    },
+    {
+      "id": "src-cd-03",
+      "url": "https://www.cgccomics.com/news/article/10326/common-comic-book-grading-defects/",
+      "title": "What Common Defects Affect Your CGC Grade?",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["compound-defects/1.1", "compound-defects/5.1"]
+    },
+    {
+      "id": "src-cd-04",
+      "url": "https://www.cgcgrading.com/en-US/resources/comics-grader-notes-guide/crease",
+      "title": "Comic Grader Notes Guide: Crease",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["compound-defects/1.2"]
+    },
+    {
+      "id": "src-cd-05",
+      "url": "https://www.cgcgrading.com/en-US/resources/comics-grader-notes-guide/tear",
+      "title": "Comic Grader Notes Guide: Tear",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["compound-defects/1.4", "compound-defects/3.2"]
+    },
+    {
+      "id": "src-cd-06",
+      "url": "https://www.cgcgrading.com/en-US/resources/comics-grader-notes-guide/stain",
+      "title": "CGC Comics Grader Notes Guide: Stain Defects",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["compound-defects/1.3", "compound-defects/3.2"]
+    },
+    {
+      "id": "src-cd-07",
+      "url": "https://www.cgcgrading.com/en-US/resources/comics-grader-notes-guide/substance",
+      "title": "Comic Grader Notes Guide: Substance",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["compound-defects/1.3", "compound-defects/5.3"]
+    },
+    {
+      "id": "src-cd-08",
+      "url": "https://www.overstreetaccess.com/grading-definitions/",
+      "title": "Overstreet Grading Definitions",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["compound-defects/2.2", "compound-defects/3.1", "compound-defects/5.2"]
+    },
+    {
+      "id": "src-cd-09",
+      "url": "https://www.milehighcomics.com/information/grade.html",
+      "title": "Chuck Rozanski's Grading Standards — Mile High Comics",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["compound-defects/3.1", "compound-defects/5.2"]
+    },
+    {
+      "id": "src-cd-10",
+      "url": "https://www.cgccomics.com/grading/grading-scale/",
+      "title": "CGC Grading Scales",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["compound-defects/2.3", "compound-defects/5.1", "compound-defects/5.2"]
+    },
+    {
+      "id": "src-cd-11",
+      "url": "https://www.cgccomics.com/grading/grading-process/",
+      "title": "CGC Grading Process",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["compound-defects/5.1"]
+    },
+    {
+      "id": "src-cd-12",
+      "url": "https://www.comiccollectorlive.com/forum/default.aspx?g=posts&t=4807",
+      "title": "Grading Question: What is the definition of Spine Roll?",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["compound-defects/1.2"]
+    },
+    {
+      "id": "src-gc-001",
+      "url": "https://www.cgcgrading.com/en-US/resources/comics-grader-notes-guide",
+      "title": "Comics Grader Notes Guide (defect classifications)",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["CLAIM-DEFECTS-01", "CLAIM-GRADE-02"]
+    },
+    {
+      "id": "src-gc-002",
+      "url": "https://www.cgccomics.com/news/article/10586/cgc-guide-grading-comics-nelson/",
+      "title": "The Official CGC Guide to Grading Comics (book)",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["CLAIM-RESOURCES-01"]
+    },
+    {
+      "id": "src-gc-003",
+      "url": "https://www.cgccomics.com/grading/grading-scale/",
+      "title": "CGC Grading Scales (25-point scale definitions)",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["CLAIM-GRADE-01", "CLAIM-GRADE-02"]
+    },
+    {
+      "id": "src-gc-004",
+      "url": "https://www.amazon.com/Official-Overstreet-Comic-Grading-Guide/dp/0609810529",
+      "title": "The Official Overstreet Comic Book Grading Guide",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-RESOURCES-02"]
+    },
+    {
+      "id": "src-gc-005",
+      "url": "https://www.overstreetaccess.com/grading-definitions/",
+      "title": "Overstreet Access: Grading Definitions (grade boundaries)",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["CLAIM-GRADE-03", "CLAIM-GRADE-04", "CLAIM-GRADE-05", "CLAIM-GRADE-06"]
+    },
+    {
+      "id": "src-gc-006",
+      "url": "https://www.qualitycomix.com/learn/example-photos-comic-grades",
+      "title": "Comic Grading Scale: Example Photos of 8 Grade Levels",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-RESOURCES-03"]
+    },
+    {
+      "id": "src-gc-007",
+      "url": "https://www.udemy.com/course/learn-to-grade-comic-books/",
+      "title": "Learn to Grade Comic Books (Udemy, Kevin Volo)",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-RESOURCES-04", "CLAIM-CALIBRATION-01"]
+    },
+    {
+      "id": "src-gc-008",
+      "url": "https://bryscomics.com/blogs/news/cgc-comic-grading-allowable-defects-in-a-cgc-9-9",
+      "title": "CGC Comic Grading: Allowable Defects in a CGC 9.8",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-GRADE-02", "CLAIM-GRADE-03"]
+    },
+    {
+      "id": "src-gc-009",
+      "url": "https://comicbookinvest.com/2016/05/27/high-grade-comic-books/",
+      "title": "Grader's Notes: High Grade Comic Books (CBSI)",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-GRADE-03"]
+    },
+    {
+      "id": "src-gc-010",
+      "url": "https://comicbookinvest.com/2016/07/14/graders-notes-mid-grade-comic-books/",
+      "title": "Grader's Notes: Mid Grade Comic Books (CBSI)",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-GRADE-04", "CLAIM-GRADE-05"]
+    },
+    {
+      "id": "src-gc-011",
+      "url": "https://www.mycomicshop.com/help/grading",
+      "title": "Comic Book Grading (MyComicShop)",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-GRADE-05", "CLAIM-BIAS-01"]
+    },
+    {
+      "id": "src-gc-012",
+      "url": "https://www.nostomania.com/servlets/com.nostomania.CatPage?name=ComicsGradingMain",
+      "title": "Nostomania Comic Book Grading Guide",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-GRADE-06", "CLAIM-BIAS-03"]
+    },
+    {
+      "id": "src-gc-013",
+      "url": "https://www.cgccomics.com/grading/grading-process/",
+      "title": "CGC Grading Process",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["CLAIM-PROCESS-01", "CLAIM-BIAS-02"]
+    },
+    {
+      "id": "src-gc-014",
+      "url": "https://boards.cgccomics.com/topic/232722-grading-bias/",
+      "title": "CGC Forum: Grading Bias Discussion",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-BIAS-04", "CLAIM-BIAS-05"]
+    },
+    {
+      "id": "src-gc-015",
+      "url": "https://www.nature.com/articles/s44271-025-00207-8",
+      "title": "No evidence for decision fatigue using large-scale field data from healthcare (Nature, 2025)",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["CLAIM-FATIGUE-01"]
+    },
+    {
+      "id": "src-gc-016",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4913118/",
+      "title": "A Guideline of Selecting and Reporting Intraclass Correlation Coefficients (Koo & Mae 2016)",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["CLAIM-ICC-01", "CLAIM-ICC-02", "CLAIM-ICC-03"]
+    },
+    {
+      "id": "src-gc-017",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12033844/",
+      "title": "Achieving Inter-Rater Agreement: OBC Clinical Trial (PMC 2025)",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["CLAIM-CALIBRATION-02", "CLAIM-ICC-04"]
+    },
+    {
+      "id": "src-gc-018",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12935580/",
+      "title": "Tutorial on Sample Size Calculation for Inter-rater Agreement Studies (PMC 2025)",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["CLAIM-ICC-03"]
+    },
+    {
+      "id": "src-gc-019",
+      "url": "https://mcpanalytics.ai/articles/intraclass-correlation-icc-practical-guide-for-data-driven-decisions",
+      "title": "ICC: All 6 Types with Python and R Code",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-ICC-02"]
+    },
+    {
+      "id": "src-gc-020",
+      "url": "https://numiqo.com/tutorial/weighted-cohens-kappa",
+      "title": "Weighted Cohen's Kappa: Measuring Inter-Rater Agreement",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-ICC-05"]
+    },
+    {
+      "id": "src-gc-021",
+      "url": "https://artfulinvestments.com/comic-book-grading/",
+      "title": "Comic Book Grading: Learn the Scale and How to Apply It",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-SETUP-01"]
+    },
+    {
+      "id": "src-gc-022",
+      "url": "https://boards.cgccomics.com/topic/23782-blacklight-and-detecting-restoration/",
+      "title": "CGC Forum: Blacklight and Detecting Restoration",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-SETUP-02"]
+    },
+    {
+      "id": "src-gc-023",
+      "url": "https://covrprice.com/grading-comics-101/",
+      "title": "Grading Comics 101 (CovrPrice)",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-BIAS-01"]
+    },
+    {
+      "id": "src-gc-024",
+      "url": "https://boards.cgccomics.com/topic/502181-how-do-i-become-certified-to-grade-comics/",
+      "title": "CGC Forum: How to Become Certified to Grade Comics",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["CLAIM-PROCESS-02"]
+    },
+    {
+      "id": "src-ss-01",
+      "url": "https://www.cgcgrading.com/en-US/resources/comics-grader-notes-guide/crease",
+      "title": "CGC Comics Grader Notes Guide: Crease Defects",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["severity-spectrum/crease-definition", "severity-spectrum/fiber-break-threshold", "severity-spectrum/subscription-crease-5.5", "severity-spectrum/spine-roll-in-crease-guide"]
+    },
+    {
+      "id": "src-ss-02",
+      "url": "https://www.cgcgrading.com/en-US/resources/comics-grader-notes-guide/distortion",
+      "title": "CGC Comics Grader Notes Guide: Distortion Defects",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["severity-spectrum/spine-roll-width-exceeds-one-inch", "severity-spectrum/torquing-1/4-inch", "severity-spectrum/reverse-spine-roll-1/16-to-1/8"]
+    },
+    {
+      "id": "src-ss-03",
+      "url": "https://www.cgcgrading.com/en-US/resources/comics-grader-notes-guide/tear",
+      "title": "CGC Comics Grader Notes Guide: Tear Defects",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["severity-spectrum/bindery-tear-1-inch", "severity-spectrum/staple-tear-8.0-9.0", "severity-spectrum/detached-cover-4.0-cap"]
+    },
+    {
+      "id": "src-ss-04",
+      "url": "https://www.cgcgrading.com/en-US/resources/comics-grader-notes-guide/stain",
+      "title": "CGC Comics Grader Notes Guide: Stain Defects",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["severity-spectrum/foxing-4.0-9.4", "severity-spectrum/tape-stain-3.0-8.0", "severity-spectrum/stain-1.0-9.8"]
+    },
+    {
+      "id": "src-ss-05",
+      "url": "https://www.overstreetaccess.com/grading-definitions/",
+      "title": "Overstreet Access Grading Definitions",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["severity-spectrum/crease-1/16-at-9.4", "severity-spectrum/crease-1/4-at-8.0", "severity-spectrum/spine-roll-by-grade", "severity-spectrum/corner-wear-by-grade", "severity-spectrum/tear-triangle-thresholds"]
+    },
+    {
+      "id": "src-ss-06",
+      "url": "https://www.comicbookgradingtool.com/comic-grading-terms",
+      "title": "Comic Book Grading Tool: Grading Terms Glossary",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["severity-spectrum/hairline-crease-0.5mm", "severity-spectrum/light-crease-2-inches", "severity-spectrum/heavy-crease-over-2-inches", "severity-spectrum/spine-stress-1/4-inch-definition"]
+    },
+    {
+      "id": "src-ss-07",
+      "url": "https://bryscomics.com/blogs/news/cgc-comic-grading-allowable-defects-in-a-cgc-9-9",
+      "title": "CGC Comic Grading: Allowable Defects in a CGC 9.8 (Bry's Comics)",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["severity-spectrum/9.8-bindery-1/8-inch", "severity-spectrum/9.8-miswrap-1/16-inch", "severity-spectrum/spine-ticks-1/8-inch"]
+    },
+    {
+      "id": "src-ss-08",
+      "url": "https://comicbookcpr.com/comic-book-dent-removal",
+      "title": "Comic Book Dent Removal (Comic Book CPR)",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["severity-spectrum/bone-folder-technique", "severity-spectrum/brittle-paper-caution", "severity-spectrum/color-break-unpressable"]
+    },
+    {
+      "id": "src-ss-09",
+      "url": "https://www.walsworth.com/blog/guide-for-comic-book-paper",
+      "title": "Essential Guide for Choosing Comic and Graphic Novel Paper (Walsworth)",
+      "accessed": "2026-04-07",
+      "type": "journalism",
+      "claims_supported": ["severity-spectrum/interior-55-70lb-gsm", "severity-spectrum/cover-80lb-118gsm", "severity-spectrum/1990s-glossy-transition"]
+    },
+    {
+      "id": "src-ss-10",
+      "url": "https://comicbookinvest.com/2016/05/27/high-grade-comic-books/",
+      "title": "CBSI Comics: Grader's Notes - High Grade Comic Books",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["severity-spectrum/stress-lines-1-3-count-9.4-9.6", "severity-spectrum/stress-lines-4-5-count-9.2-9.4", "severity-spectrum/stress-line-over-1-inch-is-crease"]
+    },
+    {
+      "id": "src-ss-11",
+      "url": "https://www.loc.gov/preservation/care/deterioratebrochure.html",
+      "title": "The Deterioration and Preservation of Paper - Library of Congress",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["severity-spectrum/newsprint-brittleness", "severity-spectrum/acid-paper-degradation"]
+    },
+    {
+      "id": "src-ss-12",
+      "url": "https://www.comiccollectorlive.com/forum/default.aspx?g=posts&t=4807",
+      "title": "Grading Question: Spine Roll Definition (ComicCollectorLive)",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["severity-spectrum/spine-roll-grade-4.0-heavy", "severity-spectrum/spine-roll-grade-6.0-8.0-moderate"]
+    },
+    {
+      "id": "src-ph-001",
+      "url": "https://www.cgcgrading.com/en-US/resources/comics-grader-notes-guide/crease",
+      "title": "CGC Comics Grader Notes Guide: Crease Defects",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["photography/1.1", "photography/1.4", "photography/2.3", "photography/5.1"]
+    },
+    {
+      "id": "src-ph-002",
+      "url": "https://www.conservation-wiki.com/wiki/Raking_light",
+      "title": "Raking light — AIC Conservation Wiki (MediaWiki)",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["photography/1.1", "photography/1.2", "photography/1.4", "photography/2.1", "photography/2.2", "photography/2.3", "photography/5.1"]
+    },
+    {
+      "id": "src-ph-003",
+      "url": "https://cameo.mfa.org/wiki/Raking_light",
+      "title": "Raking light — MFA CAMEO Conservation Vocabulary",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["photography/1.2", "photography/1.5"]
+    },
+    {
+      "id": "src-ph-004",
+      "url": "https://www.procemex.com/web-inspection/measurement-geometries/",
+      "title": "Web Inspection Measurement Geometries — Procemex",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["photography/1.2", "photography/1.5"]
+    },
+    {
+      "id": "src-ph-005",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11830798/",
+      "title": "A dataset for surface defect detection on complex structured parts based on photometric stereo — PMC / Scientific Data",
+      "accessed": "2026-04-07",
+      "type": "academic",
+      "claims_supported": ["photography/1.1", "photography/5.1"]
+    },
+    {
+      "id": "src-ph-006",
+      "url": "https://www.digitizationguidelines.gov/guidelines/digitize-technical.html",
+      "title": "FADGI Technical Guidelines for Digitizing Cultural Heritage Materials (3rd Edition, 2023)",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["photography/1.3"]
+    },
+    {
+      "id": "src-ph-007",
+      "url": "https://www.hki.fitzmuseum.cam.ac.uk/about/services/photographicservices/lightingtechniques",
+      "title": "Lighting Techniques — Hamilton Kerr Institute, Fitzwilliam Museum",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["photography/1.2", "photography/2.3"]
+    },
+    {
+      "id": "src-ph-008",
+      "url": "https://chsopensource.org/ultraviolet-fluorescence-photography-uvf/",
+      "title": "Ultraviolet Fluorescence Photography for Art Analysis — Cultural Heritage Science Open Source",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["photography/1.3"]
+    },
+    {
+      "id": "src-ph-009",
+      "url": "https://www.crime-scene-investigator.net/closeup.html",
+      "title": "Lighting Methods for Copy and Evidence Close-up Photography — Crime Scene Investigator Network",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["photography/1.5"]
+    },
+    {
+      "id": "src-ph-010",
+      "url": "https://www.unitxlabs.com/resources/image-contrast-machine-vision-system-importance-inspection/",
+      "title": "Why Image Contrast Matters in Machine Vision Applications — UnitX Labs",
+      "accessed": "2026-04-07",
+      "type": "journalism",
+      "claims_supported": ["photography/1.3", "photography/4.2"]
+    },
+    {
+      "id": "src-ph-011",
+      "url": "https://chsopensource.org/polarized-light-photography-for-art-documentation/",
+      "title": "Polarized Light Photography for Art Documentation — Cultural Heritage Science Open Source",
+      "accessed": "2026-04-07",
+      "type": "official",
+      "claims_supported": ["photography/2.2", "photography/4.3"]
+    },
+    {
+      "id": "src-ph-012",
+      "url": "https://discussions.apple.com/thread/255496554",
+      "title": "What is the shortest focus distance of iPhone 15 Camera — Apple Community",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["photography/3.1"]
+    },
+    {
+      "id": "src-ph-013",
+      "url": "https://www.tomsguide.com/how-to/how-to-enable-lens-correction-on-iphone",
+      "title": "How to enable lens correction on iPhone — Tom's Guide",
+      "accessed": "2026-04-07",
+      "type": "journalism",
+      "claims_supported": ["photography/3.1"]
+    },
+    {
+      "id": "src-ph-014",
+      "url": "https://www.diyphotography.net/proraw-vs-heif-vs-jpeg/",
+      "title": "ProRAW vs HEIF vs JPEG: Complete iPhone Photo Format Comparison — DIY Photography",
+      "accessed": "2026-04-07",
+      "type": "journalism",
+      "claims_supported": ["photography/3.2"]
+    },
+    {
+      "id": "src-ph-015",
+      "url": "https://appleinsider.com/articles/19/10/02/inside-apples-deep-fusion-the-iphone-11-and-pros-computational-photography-feature",
+      "title": "Inside Apple's Deep Fusion — AppleInsider",
+      "accessed": "2026-04-07",
+      "type": "journalism",
+      "claims_supported": ["photography/3.2", "photography/3.3"]
+    },
+    {
+      "id": "src-ph-016",
+      "url": "https://www.macworld.com/article/233656/how-to-enable-or-disable-deep-fusion-and-smart-hdr-on-the-iphone-11.html",
+      "title": "How to enable or disable Deep Fusion and Smart HDR on the iPhone 11 — Macworld",
+      "accessed": "2026-04-07",
+      "type": "journalism",
+      "claims_supported": ["photography/3.3"]
+    },
+    {
+      "id": "src-ph-017",
+      "url": "https://iphonephotographyschool.com/ae-af-lock/",
+      "title": "How To Use iPhone AE/AF Lock For Perfect Focus & Exposure — iPhone Photography School",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["photography/3.4"]
+    },
+    {
+      "id": "src-ph-018",
+      "url": "https://intelgic.com/How-to-get-Defects-Visible-on-Plastic-Surfaces-and-Transparent-Sheets-in-Machine-Vision-Imaging",
+      "title": "How to get Defects Visible on Plastic Surfaces and Transparent Sheets in Machine Vision Imaging — Intelgic",
+      "accessed": "2026-04-07",
+      "type": "journalism",
+      "claims_supported": ["photography/4.1"]
+    },
+    {
+      "id": "src-ph-019",
+      "url": "https://www.dpreview.com/forums/thread/3575966",
+      "title": "Good lighting setup for black backdrop — DPReview Forums",
+      "accessed": "2026-04-07",
+      "type": "community",
+      "claims_supported": ["photography/4.1"]
+    }
+  ]
+}
