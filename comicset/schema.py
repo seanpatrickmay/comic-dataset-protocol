@@ -126,7 +126,10 @@ def save_dataset(dataset: Dataset, directory: Path) -> None:
             manifest_entry = {
                 "slug": slug,
                 "gcd_issue_id": entry.gcd_issue_id or 0,
-                "image_path": f"images/{slug}_front.jpg",
+                "image_path": next(
+                    (v.image_path for v in entry.views if v.is_primary),
+                    f"images/{slug}_front.jpg",
+                ),
                 "series_title": entry.title or "",
                 "issue_number": "",
                 "publisher": entry.publisher or "",
