@@ -1,13 +1,12 @@
 """comicset ingest — process photos through identification + grading pipelines.
 
-Expects a flat folder of photos taken in a fixed 4-shot sequence per comic:
+Expects a flat folder of photos taken in a fixed 3-shot sequence per comic:
   1. Front cover  (identified → names the comic)
   2. Back cover
-  3. Interior spread 1 (center/staples — shows page color + centerfold condition)
-  4. Interior spread 2 (near back — back pages yellow more)
+  3. Interior center spread (staples, page color, centerfold condition)
 
 Photos are sorted by filename (timestamp order from iPhone).
-Every 4 images = one comic.
+Every 3 images = one comic.
 """
 from __future__ import annotations
 
@@ -32,8 +31,8 @@ from .schema import (
 logger = logging.getLogger(__name__)
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".heic", ".heif"}
-SHOTS_PER_COMIC = 4
-SHOT_ROLES = ["front", "back", "interior-1", "interior-2"]
+SHOTS_PER_COMIC = 3
+SHOT_ROLES = ["front", "back", "interior"]
 
 
 def _find_images(photos_dir: Path) -> list[Path]:
