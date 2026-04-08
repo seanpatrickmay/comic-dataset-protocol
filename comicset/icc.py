@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import csv
-import math
 from pathlib import Path
 
 from .schema import load_dataset, save_dataset
@@ -129,7 +128,7 @@ def run_icc(args):
     print(f"Mean absolute difference: {sum(d[3] for d in diffs) / len(diffs):.2f}")
 
     # Per-tier breakdown
-    print(f"\nPer-tier ICC:")
+    print("\nPer-tier ICC:")
     for tier in ["High (8.5+)", "Mid (5.5-8.4)", "Low (≤5.4)"]:
         if tier in tier_data and len(tier_data[tier][0]) >= 3:
             t_icc, _, _ = _compute_icc_31(tier_data[tier][0], tier_data[tier][1])
@@ -145,7 +144,7 @@ def run_icc(args):
         for slug, g1, g2, diff in big_diffs:
             print(f"  {slug:40s} Sean: {g1:4.1f}   Marcus: {g2:4.1f}   Δ={diff:.1f}")
     else:
-        print(f"\nNo disagreements > 1.0 grade point ✓")
+        print("\nNo disagreements > 1.0 grade point ✓")
 
     print(f"\nAll {len(slugs)} comics:")
     for slug, g1, g2, diff in diffs[:10]:

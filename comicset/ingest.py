@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import asyncio
-import json
 import logging
 import re
 import shutil
@@ -17,7 +16,6 @@ from .schema import (
     DatasetMeta,
     DefectAnnotation,
     ImageView,
-    CaptureMetadata,
     save_dataset,
 )
 
@@ -70,7 +68,6 @@ async def _process_image(
     publisher = None
     year = None
     gcd_issue_id = None
-    identification_confidence = None
     reference_cover_path = None
 
     # --- Identification ---
@@ -82,7 +79,6 @@ async def _process_image(
                 issue_number = identification.issue_number
                 publisher = identification.publisher
                 year = identification.year
-                identification_confidence = identification.confidence
             if ranked:
                 gcd_issue_id = ranked[0].candidate.gcd_issue_id
 
@@ -111,7 +107,6 @@ async def _process_image(
     ai_confidence = None
     ai_defects = []
     ai_reasoning = None
-    structural = {}
 
     if grader and not skip_grade:
         try:
@@ -131,11 +126,6 @@ async def _process_image(
                 )
                 for d in result.defects
             ]
-            structural = {
-                "spine_condition": result.spine_assessment,
-                "corner_condition": result.corner_assessment,
-                "edge_condition": result.edge_assessment,
-            }
             print(f"Grade: {ai_grade}", end=" ", flush=True)
         except Exception as exc:
             logger.debug("Grading failed for %s: %s", image_path.name, exc)
@@ -265,7 +255,7 @@ async def _run_ingest(args) -> None:
     print(f"\nDataset saved to: {output_dir}")
     print(f"  manifest.jsonl:   {len(entries)} entries")
     print(f"  annotations.json: {len(entries)} entries (AI drafts — add human grades next)")
-    print(f"\nNext steps:")
+    print("\nNext steps:")
     print(f"  1. Grade all {len(entries)} comics independently (you + Marcus)")
     print(f"  2. Run: comicset icc {output_dir} --grades grades.csv")
     print(f"  3. Run: comicset annotate {output_dir}")

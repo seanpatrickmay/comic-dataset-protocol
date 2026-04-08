@@ -58,19 +58,19 @@ def run_status(args):
     print(f"Ref covers:  {with_ref}/{total}")
     print(f"Defects:     {annotated_defects} total across {sum(1 for e in entries.values() if e.known_defects)} comics")
 
-    print(f"\nGrade Tier Distribution:")
+    print("\nGrade Tier Distribution:")
     for tier, count in [("High (8.5+)", tiers["high"]), ("Mid (5.5-8.4)", tiers["mid"]), ("Low (≤5.4)", tiers["low"])]:
         bar_str = "█" * count
         print(f"  {tier:15s} {count:3d}  {bar_str}")
     if tiers["ungraded"]:
         print(f"  {'Ungraded':15s} {tiers['ungraded']:3d}")
 
-    print(f"\nSpecimen Types:")
+    print("\nSpecimen Types:")
     for st, count in sorted(specimen_counts.items()):
         print(f"  {st:15s} {count}")
 
     if defect_cats:
-        print(f"\nDefect Keywords (annotated):")
+        print("\nDefect Keywords (annotated):")
         for kw, count in sorted(defect_cats.items(), key=lambda x: -x[1]):
             print(f"  {kw:25s} {count}")
 

@@ -1,7 +1,6 @@
 """comicset validate — check dataset completeness and correctness."""
 from __future__ import annotations
 
-import json
 from pathlib import Path
 
 from .schema import load_dataset
@@ -27,7 +26,7 @@ def run_validate(args):
     # Check images exist
     images_dir = dataset_dir / "images"
     if not images_dir.is_dir():
-        print(f"  ✗ images/ directory not found")
+        print("  ✗ images/ directory not found")
         errors += 1
     else:
         missing_images = []
@@ -100,16 +99,16 @@ def run_validate(args):
             if annotated_defects > 0:
                 print(f"  ✓ All {annotated_defects} defect keywords valid against defect chart")
             else:
-                print(f"  ⚠ No defects annotated yet")
+                print("  ⚠ No defects annotated yet")
                 warnings += 1
     else:
-        print(f"  ⚠ Backend not found — cannot validate defect keywords")
+        print("  ⚠ Backend not found — cannot validate defect keywords")
         warnings += 1
 
     # Summary
     print(f"\n{'─'*40}")
     if errors == 0 and warnings == 0:
-        print(f"  ✓ VALID — dataset is ready for deployment")
+        print("  ✓ VALID — dataset is ready for deployment")
     elif errors == 0:
         print(f"  ⚠ {warnings} warning(s) — dataset is usable but incomplete")
     else:

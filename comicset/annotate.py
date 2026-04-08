@@ -9,7 +9,7 @@ import json
 import http.server
 import webbrowser
 from pathlib import Path
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import urlparse
 
 from .schema import load_dataset, save_dataset, DefectAnnotation, StructuralAssessments
 
@@ -308,7 +308,7 @@ def run_annotate(args):
     print(f"\nAnnotation UI running at {url}")
     print(f"Dataset: {dataset_dir.name} ({len(dataset.entries)} entries)")
     print(f"Defect keywords: {len(keywords)} loaded from backend")
-    print(f"Press Ctrl+C to stop\n")
+    print("Press Ctrl+C to stop\n")
     webbrowser.open(url)
 
     try:

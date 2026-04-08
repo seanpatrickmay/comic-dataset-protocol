@@ -1,7 +1,6 @@
 """comicset deploy — package dataset for the grading harness."""
 from __future__ import annotations
 
-import json
 import shutil
 from pathlib import Path
 
@@ -50,7 +49,7 @@ def run_deploy(args):
         if dst_images.exists():
             shutil.rmtree(dst_images)
         shutil.copytree(src_images, dst_images)
-        print(f"  ✓ Copied images/")
+        print("  ✓ Copied images/")
 
     # Copy manifest and annotations
     for filename in ["manifest.jsonl", "annotations.json"]:
@@ -66,10 +65,10 @@ def run_deploy(args):
         if dst_ref.exists():
             shutil.rmtree(dst_ref)
         shutil.copytree(ref_covers, dst_ref)
-        print(f"  ✓ Copied reference_covers/")
+        print("  ✓ Copied reference_covers/")
 
     print(f"\n✓ Deployed to {target_dir}")
-    print(f"\nRun the harness:")
+    print("\nRun the harness:")
     print(f"  cd {target_dir.parent.parent}")
     print(f"  PYTHONPATH=. python3 tests/harness_grading.py --test-set {target_dir.name}")
     print()
